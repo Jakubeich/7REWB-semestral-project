@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <title>NHL Fan Zone – Fan zóna</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <i class="bi bi-trophy me-2"></i>
+      <span>NHL Fan Zone</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+            aria-expanded="false" aria-label="Přepnout navigaci">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Domů</a></li>
+        <li class="nav-item"><a class="nav-link" href="teams.html">Týmy</a></li>
+        <li class="nav-item"><a class="nav-link" href="players.html">Hráči</a></li>
+        <li class="nav-item"><a class="nav-link" href="schedule.html">Rozpis</a></li>
+        <li class="nav-item"><a class="nav-link" href="stats.html">Statistiky</a></li>
+        <li class="nav-item"><a class="nav-link active" href="fan-zone.html">Fan zóna</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-2">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-2">
+      <li class="breadcrumb-item"><a href="index.html">Domů</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Fan zóna</li>
+    </ol>
+  </nav>
+</div>
+
+<div class="container my-3">
+  <h1 class="h3 mb-3">
+    <i class="bi bi-chat-dots me-1"></i>
+    Fan zóna – přidej se k NHL komunitě
+  </h1>
+
+  <p class="text-muted">
+    Vyplň formulář a napiš nám něco o sobě jako fanouškovi NHL.
+  </p>
+
+  <form class="row g-3">
+
+    <div class="col-md-6">
+      <label for="firstName" class="form-label">Jméno</label>
+      <input type="text" class="form-control" id="firstName" placeholder="Např. Jan" required>
+    </div>
+
+    <div class="col-md-6">
+      <label for="lastName" class="form-label">Příjmení</label>
+      <input type="text" class="form-control" id="lastName" placeholder="Např. Novák" required>
+    </div>
+
+    <div class="col-md-6">
+      <label for="email" class="form-label">E-mail</label>
+      <div class="input-group">
+        <span class="input-group-text" id="emailPrepend">
+          <i class="bi bi-envelope"></i>
+        </span>
+        <input type="email" class="form-control" id="email" aria-describedby="emailPrepend" placeholder="tvuj@email.cz" required>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <label for="age" class="form-label">Věk</label>
+      <input type="number" class="form-control" id="age" min="5" max="100" placeholder="Např. 20">
+    </div>
+
+    <div class="col-md-3">
+      <label for="city" class="form-label">Město</label>
+      <input type="text" class="form-control" id="city" placeholder="Např. Praha">
+    </div>
+
+    <div class="col-md-6">
+      <label for="favTeam" class="form-label">Oblíbený tým NHL</label>
+      <select id="favTeam" class="form-select" required>
+        <option value="" selected disabled>Vyber tým...</option>
+        <option>Boston Bruins</option>
+        <option>Toronto Maple Leafs</option>
+        <option>Montreal Canadiens</option>
+        <option>New York Rangers</option>
+        <option>Edmonton Oilers</option>
+        <option>Tampa Bay Lightning</option>
+        <option>Colorado Avalanche</option>
+        <option>Jiný (uveď v poznámce)</option>
+      </select>
+    </div>
+
+    <div class="col-md-6">
+      <label for="favPlayer" class="form-label">Oblíbený hráč</label>
+      <input type="text" class="form-control" id="favPlayer" placeholder="Např. David Pastrňák">
+    </div>
+
+    <div class="col-12">
+      <label class="form-label d-block">Jak často sleduješ NHL?</label>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="freqRadio" id="freqDaily" value="daily" checked>
+        <label class="form-check-label" for="freqDaily">Skoro každý den</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="freqRadio" id="freqWeekly" value="weekly">
+        <label class="form-check-label" for="freqWeekly">Několikrát týdně</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="freqRadio" id="freqSometimes" value="sometimes">
+        <label class="form-check-label" for="freqSometimes">Občas</label>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <label class="form-label d-block">Co tě zajímá nejvíc? (můžeš vybrat více možností)</label>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="stats" id="checkStats" checked>
+        <label class="form-check-label" for="checkStats">
+          Statistiky a analytika
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="highlights" id="checkHighlights">
+        <label class="form-check-label" for="checkHighlights">
+          Sestřihy zápasů a nejlepší akce
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="history" id="checkHistory">
+        <label class="form-check-label" for="checkHistory">
+          Historie, legendy a rekordy
+        </label>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="newsletter">
+        <label class="form-check-label" for="newsletter">
+          Chci dostávat e-mailový newsletter o NHL
+        </label>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <label for="message" class="form-label">Zpráva / poznámka</label>
+      <textarea class="form-control" id="message" rows="4" placeholder="Napiš nám cokoliv – jak jsi se k NHL dostal, co tě baví..."></textarea>
+    </div>
+
+    <div class="col-12 d-flex gap-2">
+      <button type="submit" class="btn btn-success">
+        <i class="bi bi-save me-1"></i>
+        Uložit
+      </button>
+      <button type="reset" class="btn btn-outline-secondary">
+        Vymazat formulář
+      </button>
+    </div>
+
+  </form>
+</div>
+
+<footer class="bg-dark text-light py-3 mt-auto">
+  <div class="container text-center small">
+    © 2025 NHL Fan Zone - semester project
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

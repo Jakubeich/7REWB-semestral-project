@@ -1,0 +1,38 @@
+/* NHL Fan Zone - Společné styly */
+
+/* Základní nastavení */
+body {
+  padding-top: 70px;
+}
+
+/* Navigace */
+.navbar-brand span {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Carousel na hlavní stránce */
+.hero-carousel img {
+  object-fit: cover;
+  height: 280px;
+}
+
+@media (min-width: 768px) {
+  .hero-carousel img {
+    height: 420px;
+  }
+}
+
+/* Týmy - loga */
+.team-logo {
+  height: 80px;
+  object-fit: contain;
+}
+
+/* Hráči - fotky */
+.player-photo {
+  height: 300px;
+  object-fit: contain;
+  width: 100%;
+  background-color: #f8f9fa;
+}

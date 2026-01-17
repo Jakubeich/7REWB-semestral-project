@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <title>NHL Fan Zone – Týmy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <i class="bi bi-trophy me-2"></i>
+      <span>NHL Fan Zone</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+            aria-expanded="false" aria-label="Přepnout navigaci">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Domů</a></li>
+        <li class="nav-item"><a class="nav-link active" href="teams.html">Týmy</a></li>
+        <li class="nav-item"><a class="nav-link" href="players.html">Hráči</a></li>
+        <li class="nav-item"><a class="nav-link" href="schedule.html">Rozpis</a></li>
+        <li class="nav-item"><a class="nav-link" href="stats.html">Statistiky</a></li>
+        <li class="nav-item"><a class="nav-link" href="fan-zone.html">Fan zóna</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-2">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-2">
+      <li class="breadcrumb-item"><a href="index.html">Domů</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Týmy</li>
+    </ol>
+  </nav>
+</div>
+
+<div class="container my-3">
+  <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+    <h1 class="h3 mb-0">
+      <i class="bi bi-people me-1"></i>
+      Týmy NHL
+    </h1>
+    <a href="schedule.html" class="btn btn-outline-primary btn-sm">
+      <i class="bi bi-calendar-event me-1"></i>
+      Podívat se na rozpis zápasů
+    </a>
+  </div>
+
+  <p class="text-muted">
+    Všech 32 týmů NHL rozdělených podle konferencí a divizí.
+  </p>
+
+  <!-- EASTERN CONFERENCE - ATLANTIC DIVISION -->
+  <h2 class="h4 mt-4 mb-3">
+    <i class="bi bi-geo-alt-fill me-2"></i>Eastern Conference – Atlantic Division
+  </h2>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mb-4">
+    
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/boston_bruins.png" class="team-logo" alt="Boston Bruins logo">
+          </div>
+          <h5 class="card-title">Boston Bruins</h5>
+          <p class="card-text flex-grow-1 small">
+            Jeden z nejtradičnějších týmů NHL, hrající v TD Garden. Často patří mezi favority Východní konference.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-dark">Atlantic</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/buffalo_sabers.png" class="team-logo" alt="Buffalo Sabres logo">
+          </div>
+          <h5 class="card-title">Buffalo Sabres</h5>
+          <p class="card-text flex-grow-1 small">
+            Tým z Buffala, který hraje v KeyBank Center. V minulosti měli hvězdy jako Dominik Hašek a Pat LaFontaine.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-dark">Atlantic</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/detroit_wings.png" class="team-logo" alt="Detroit Red Wings logo">
+          </div>
+          <h5 class="card-title">Detroit Red Wings</h5>
+          <p class="card-text flex-grow-1 small">
+            Legendární tým s bohatou historií, kde působili čeští hráči jako Dominik Hašek, Jiří Fischer a Filip Zadina.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-dark">Atlantic</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/florida_panthers.png" class="team-logo" alt="Florida Panthers logo">
+          </div>
+          <h5 class="card-title">Florida Panthers</h5>
+          <p class="card-text flex-grow-1 small">
+            Tým z Miami, poslední finalista Stanley Cupu. Hrají v Amerant Bank Arena.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-dark">Atlantic</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/montreal_canadiens.png" class="team-logo" alt="Montreal Canadiens logo">
+          </div>
+          <h5 class="card-title">Montreal Canadiens</h5>
+          <p class="card-text flex-grow-1 small">
+            Nejtradičnější tým NHL s 24 Stanley Cupy. Hrají v Bell Centre, nejznámější hokejové aréně v Kanadě.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-dark">Atlantic</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/ottawa_senators.png" class="team-logo" alt="Ottawa Senators logo">
+          </div>
+          <h5 class="card-title">Ottawa Senators</h5>
+          <p class="card-text flex-grow-1 small">
+            Kanadský tým z Ottawy s rostoucí mladou hvězdou Timem Stützlem.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-dark">Atlantic</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/tampa_bay.png" class="team-logo" alt="Tampa Bay Lightning logo">
+          </div>
+          <h5 class="card-title">Tampa Bay Lightning</h5>
+          <p class="card-text flex-grow-1 small">
+            Tým, který v posledních letech dominoval lize. Opory: Kucherov, Guentzel, Point.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-dark">Atlantic</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/toronto_maple_leafs.png" class="team-logo" alt="Toronto Maple Leafs logo">
+          </div>
+          <h5 class="card-title">Toronto Maple Leafs</h5>
+          <p class="card-text flex-grow-1 small">
+            Kanadský tým s obrovskou fanouškovskou základnou a dlouhou historií. Domácí aréna Scotiabank Arena.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-dark">Atlantic</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- EASTERN CONFERENCE - METROPOLITAN DIVISION -->
+  <h2 class="h4 mt-4 mb-3">
+    <i class="bi bi-geo-alt-fill me-2"></i>Eastern Conference – Metropolitan Division
+  </h2>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mb-4">
+    
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/carolina_hurricanes.png" class="team-logo" alt="Carolina Hurricanes logo">
+          </div>
+          <h5 class="card-title">Carolina Hurricanes</h5>
+          <p class="card-text flex-grow-1 small">
+            Tým z Raleigh, který se v posledních letech řadí mezi playoff favority. Působí zde Martin Nečas.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-secondary">Metropolitan</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/columbus_blue_jackets.png" class="team-logo" alt="Columbus Blue Jackets logo">
+          </div>
+          <h5 class="card-title">Columbus Blue Jackets</h5>
+          <p class="card-text flex-grow-1 small">
+            Tým z Columbusu, kde hraje Johnny Gaudreau. V minulosti zde působil Jakub Voráček.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-secondary">Metropolitan</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/new_jersey_devils.png" class="team-logo" alt="New Jersey Devils logo">
+          </div>
+          <h5 class="card-title">New Jersey Devils</h5>
+          <p class="card-text flex-grow-1 small">
+            Mladý a talentovaný tým s hvězdami jako Jack Hughes a Nico Hischier.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-secondary">Metropolitan</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/new_york_islanders.png" class="team-logo" alt="New York Islanders logo">
+          </div>
+          <h5 class="card-title">New York Islanders</h5>
+          <p class="card-text flex-grow-1 small">
+            Tým z Long Islandu se čtyřmi Stanley Cupy ze 80. let. Hrají v UBS Arena.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-secondary">Metropolitan</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/new_york_rangers.png" class="team-logo" alt="New York Rangers logo">
+          </div>
+          <h5 class="card-title">New York Rangers</h5>
+          <p class="card-text flex-grow-1 small">
+            Tým z Manhattanu, který hraje v legendární Madison Square Garden. Jeden z tzv. "Original Six".
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-secondary">Metropolitan</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/philadelphia_flyers.png" class="team-logo" alt="Philadelphia Flyers logo">
+          </div>
+          <h5 class="card-title">Philadelphia Flyers</h5>
+          <p class="card-text flex-grow-1 small">
+            Tradiční tým z Philadelphie s vášnivou fanouškovskou základnou. Působil zde Jaromír Jágr.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-secondary">Metropolitan</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/pittsburgh_penguins.png" class="team-logo" alt="Pittsburgh Penguins logo">
+          </div>
+          <h5 class="card-title">Pittsburgh Penguins</h5>
+          <p class="card-text flex-grow-1 small">
+            Tým Sidneyho Crosbyho a Evgeniho Malkina. Tady působil i Jaromír Jágr v nejlepších letech.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-secondary">Metropolitan</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/washington_capitals.png" class="team-logo" alt="Washington Capitals logo">
+          </div>
+          <h5 class="card-title">Washington Capitals</h5>
+          <p class="card-text flex-grow-1 small">
+            Tým Alexandra Ovečkina, který pokořil rekord Waynea Gretzkyho v počtu gólů v NHL.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-secondary">Metropolitan</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- WESTERN CONFERENCE - CENTRAL DIVISION -->
+  <h2 class="h4 mt-4 mb-3">
+    <i class="bi bi-geo-alt-fill me-2"></i>Western Conference – Central Division
+  </h2>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mb-4">
+    
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/chicago_blackhawks.png" class="team-logo" alt="Chicago Blackhawks logo">
+          </div>
+          <h5 class="card-title">Chicago Blackhawks</h5>
+          <p class="card-text flex-grow-1 small">
+            Legendární tým s šesti Stanley Cupy. V minulosti zde hráli Dominik Hašek a Dominik Kubalík.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-danger">Central</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/colorado_avalanche.png" class="team-logo" alt="Colorado Avalanche logo">
+          </div>
+          <h5 class="card-title">Colorado Avalanche</h5>
+          <p class="card-text flex-grow-1 small">
+            Tým z Denveru, nedávný vítěz Stanley Cupu. Září v něm například Nathan MacKinnon a Cale Makar.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-danger">Central</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/dallas_stars.png" class="team-logo" alt="Dallas Stars logo">
+          </div>
+          <h5 class="card-title">Dallas Stars</h5>
+          <p class="card-text flex-grow-1 small">
+            Tým z Texasu s vítězstvím Stanley Cupu z roku 1999. Hrají v American Airlines Center.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-danger">Central</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/minnesota_wild.png" class="team-logo" alt="Minnesota Wild logo">
+          </div>
+          <h5 class="card-title">Minnesota Wild</h5>
+          <p class="card-text flex-grow-1 small">
+            Tým z Minnesoty, kde září hvězda Kirill Kaprizov.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-danger">Central</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/nashville_predators.png" class="team-logo" alt="Nashville Predators logo">
+          </div>
+          <h5 class="card-title">Nashville Predators</h5>
+          <p class="card-text flex-grow-1 small">
+            Tým z Nashville s jedněmi z nejlepších fanoušků v NHL. Hrají v Bridgestone Arena.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-danger">Central</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/st_louis_blues.png" class="team-logo" alt="St. Louis Blues logo">
+          </div>
+          <h5 class="card-title">St. Louis Blues</h5>
+          <p class="card-text flex-grow-1 small">
+            Vítězové Stanley Cupu 2019. Působil zde legendární Vladimír Sobotka.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-danger">Central</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/utah_mammoth.png" class="team-logo" alt="Utah Mammoth logo">
+          </div>
+          <h5 class="card-title">Utah Mammoth</h5>
+          <p class="card-text flex-grow-1 small">
+            Nový tým NHL od sezóny 2024/25, přestěhovaný z Arizony.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-danger">Central</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/winnipeg_jets.png" class="team-logo" alt="Winnipeg Jets logo">
+          </div>
+          <h5 class="card-title">Winnipeg Jets</h5>
+          <p class="card-text flex-grow-1 small">
+            Kanadský tým z Winnipegu s vášnivou fanouškovskou základnou. Hrají v Canada Life Centre.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-danger">Central</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- WESTERN CONFERENCE - PACIFIC DIVISION -->
+  <h2 class="h4 mt-4 mb-3">
+    <i class="bi bi-geo-alt-fill me-2"></i>Western Conference – Pacific Division
+  </h2>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mb-4">
+    
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/anaheim_ducks.png" class="team-logo" alt="Anaheim Ducks logo">
+          </div>
+          <h5 class="card-title">Anaheim Ducks</h5>
+          <p class="card-text flex-grow-1 small">
+            Vítězové Stanley Cupu 2007. V minulosti zde působili čeští hráči Petr Sýkora a Radek Dvořák.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-info">Pacific</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/calgary_flames.png" class="team-logo" alt="Calgary Flames logo">
+          </div>
+          <h5 class="card-title">Calgary Flames</h5>
+          <p class="card-text flex-grow-1 small">
+            Kanadský tým z Calgary s vítězstvím Stanley Cupu z roku 1989. Působil zde Jaromír Jágr.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-info">Pacific</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/edmonton_oilers.png" class="team-logo" alt="Edmonton Oilers logo">
+          </div>
+          <h5 class="card-title">Edmonton Oilers</h5>
+          <p class="card-text flex-grow-1 small">
+            Tým, ve kterém září Connor McDavid a Leon Draisaitl. V minulosti tu kraloval Wayne Gretzky.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-info">Pacific</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/los_angeles_kings.png" class="team-logo" alt="Los Angeles Kings logo">
+          </div>
+          <h5 class="card-title">Los Angeles Kings</h5>
+          <p class="card-text flex-grow-1 small">
+            Dvojnásobní vítězové Stanley Cupu (2012, 2014). Působil zde legendární český obránce Ladislav Šmíd.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-info">Pacific</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/san_jose_sharks.png" class="team-logo" alt="San Jose Sharks logo">
+          </div>
+          <h5 class="card-title">San Jose Sharks</h5>
+          <p class="card-text flex-grow-1 small">
+            Tým z Kalifornie. Hrají v SAP Center.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-info">Pacific</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/seattle_kraken.png" class="team-logo" alt="Seattle Kraken logo">
+          </div>
+          <h5 class="card-title">Seattle Kraken</h5>
+          <p class="card-text flex-grow-1 small">
+            Nový tým NHL od sezóny 2021/22. Hrají v Climate Pledge Arena v Seattlu.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-info">Pacific</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/vancouver_canucks.png" class="team-logo" alt="Vancouver Canucks logo">
+          </div>
+          <h5 class="card-title">Vancouver Canucks</h5>
+          <p class="card-text flex-grow-1 small">
+            Kanadský tým z Vancouveru, kde září Elias Pettersson. Hrají v Rogers Arena.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-info">Pacific</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body d-flex flex-column">
+          <div class="text-center mb-3">
+            <img src="img/vegas_golden_knights.png" class="team-logo" alt="Vegas Golden Knights logo">
+          </div>
+          <h5 class="card-title">Vegas Golden Knights</h5>
+          <p class="card-text flex-grow-1 small">
+            Vítězové Stanley Cupu 2023. Tým z Las Vegas s úžasnou atmosférou. Působí zde Tomáš Hertl.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mt-2">
+            <span class="badge bg-info">Pacific</span>
+            <a href="stats.html#standings" class="btn btn-sm btn-primary">Detail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer class="bg-dark text-light py-3 mt-auto">
+  <div class="container text-center small">
+    © 2025 NHL Fan Zone – semester project
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
